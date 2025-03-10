@@ -1,13 +1,119 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+html{
+    font-size:100%;
+  }
+
+body{
+    margin: 0;
+    height:100vh;
+    width:100vw;
+    background-image:url("Images/background-image.jpg");
+    font-family: 'Open Sans',serif;
+    color:white;
+   
+  }
+
+body, .body-background, .question-card{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.home-page h1{
+  margin:3rem 3rem 3rem 3rem;
 }
+
+.home-page{
+  display:flex;
+  text-align: center;
+  flex-direction: column;
+  
+}
+
+.home-page__nav-items{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.home-page__nav_item{
+  margin: 1rem;
+  width:70%;
+  padding: 1rem;
+  border-radius:10px;
+  background-color: #89CFF0; 
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+}
+
+.home-page__nav_item:hover,
+.question-card__submit-button:hover,
+.question-card__result .question-card__btn-play-again:hover{
+  background-color: #0066b2;
+  transition: 3s;
+}
+
+/* @media (min-width: 1024px){
+  .home-page__nav-items{
+    
+  }
+} */
+
+.question-card{
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 0.2rem;
+  margin: 2vh;
+}
+
+.question-card h1{
+  font-size: 1rem;
+  margin-bottom: 3vh;
+}
+
+.question-card h2, .question-card__active-question-number{
+    align-self: center;
+}
+
+.question-card__answer-list li,
+.question-card__submit-button,
+.question-card__result,
+.question-card__btn-play-again {
+    align-self: center;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    width:80%;
+    border:10px;
+    margin:1vh;
+    background-color: rgb(0 0 0 / 0.5);
+    color:white;
+}
+
+.question-card__answer-list .question-card__selected-answer{
+background-color: #89CFF0;
+}
+
+.question-card__submit-button{
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  width: max-content;
+
+  &:disabled{
+  cursor:not-allowed;
+ } 
+}
+
+.question-card__result{
+  letter-spacing: 0.2rem;
+  width: fit-content;
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+
