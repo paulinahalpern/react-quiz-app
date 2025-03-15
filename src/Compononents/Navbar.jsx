@@ -1,21 +1,16 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+import { getQuestionCategories } from "./data";
 
+export function Navbar() {
+  const categories = getQuestionCategories();
 
-export function Navbar(){
-    return (
-        <div className="home-page__nav-items">
-            <Link to="/accessibility">
-            <button className="home-page__nav_item">Accessibility</button>
-            </Link>
-            <Link to="/css">
-            <button className="home-page__nav_item">CSS</button>
-            </Link>
-            <Link to="/html">
-            <button className="home-page__nav_item">HTML</button>
-            </Link>
-            <Link to="/javascript">
-            <button className="home-page__nav_item">JavaScript</button>
-            </Link>
-        </div>
-            )
+  return (
+    <div className="home-page__nav-items">
+      {categories.map((categoryName) => (
+        <Link to={`/categories/${categoryName}`}>
+          <button className="home-page__nav_item">{categoryName}</button>
+        </Link>
+      ))}
+    </div>
+  );
 }
