@@ -3,6 +3,7 @@ import { useState } from "react";
 import React from "react";
 import { resultInitialEstate } from "./constants";
 import { useParams } from "react-router-dom";
+import { getQuestionByCategory } from "./data";
 
 export function SinglePageQuestion() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -12,12 +13,11 @@ export function SinglePageQuestion() {
   const [showResult, setShowResult] = useState(false);
   const { title } = useParams();
 
-  const { question, options, answer } = questionQuiz.questions[currentQuestion];
+  const { question, options, answer } = getQuestionByCategory[currentQuestion];
   const onAnswerClick = (chosenAnswer, index) => {
     setAnswerIndex(index);
     if (chosenAnswer === answer) {
       setChosenAnswer(true);
-      console.log("yes");
     } else {
       setChosenAnswer(false);
     }
