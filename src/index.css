@@ -99,6 +99,14 @@ body, .body-background, .question-card{
   background-color: #89CFF0;
 }
 
+
+@media (min-width: 1024px) {
+  .question-card__answer-list li{
+    width:60%;
+  
+  }
+} 
+
 .question-card__submit-button{
   text-transform: uppercase;
   letter-spacing: 0.2rem;

@@ -7,7 +7,7 @@ export function Navbar() {
   return (
     <div className="home-page__nav-items">
       {categories.map((categoryName) => (
-        <Link to={`/categories/${categoryName}`}>
+        <Link to={`/categories/${categoryName}`} key={categoryName}>
           <button className="home-page__nav_item">{categoryName}</button>
         </Link>
       ))}

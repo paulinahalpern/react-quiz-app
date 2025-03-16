@@ -13,7 +13,10 @@ export function SinglePageQuestion() {
   const [showResult, setShowResult] = useState(false);
   const { title } = useParams();
 
-  const { question, options, answer } = getQuestionByCategory[currentQuestion];
+  const categoryType = getQuestionByCategory(title);
+
+  const { question, options, answer } = categoryType.questions[currentQuestion];
+
   const onAnswerClick = (chosenAnswer, index) => {
     setAnswerIndex(index);
     if (chosenAnswer === answer) {
@@ -37,7 +40,7 @@ export function SinglePageQuestion() {
           }
     );
 
-    if (currentQuestion !== questionQuiz.questions.length - 1) {
+    if (currentQuestion !== categoryType.questions.length - 1) {
       setCurrentQuestion((prev) => prev + 1);
     } else {
       setCurrentQuestion(0);
@@ -53,9 +56,9 @@ export function SinglePageQuestion() {
     <div class="question-card">
       {!showResult ? (
         <>
-          <h1>Accessibility</h1>
+          <h1>{title}</h1>
           <span className="question-card__active-question-number">
-            Questions {currentQuestion + 1} of {questionQuiz.questions.length}
+            Questions {currentQuestion + 1} of {categoryType.questions.length}
           </span>
           <h2>{question}</h2>
           <ul className="question-card__answer-list">
@@ -77,7 +80,7 @@ export function SinglePageQuestion() {
               onClick={onClickNext}
               disabled={answerIndex === null}
             >
-              {currentQuestion === questionQuiz.questions.length - 1
+              {currentQuestion === categoryType.questions.length - 1
                 ? "Finish"
                 : "Submit Answer"}
             </button>
@@ -91,7 +94,7 @@ export function SinglePageQuestion() {
             {result.correctAnswers}
           </p>
           <p className="question-card__number-questions">
-            out of {questionQuiz.questions.length}
+            out of {categoryType.questions.length}
           </p>
           <button
             className="question-card__btn-play-again"

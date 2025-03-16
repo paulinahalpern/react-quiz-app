@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { Home } from "../Pages/home.jsx";
-// import { SinglePageQuestion } from "./Question.jsx";
+import { SinglePageQuestion } from "./Question.jsx";
 import { QuestionPage } from "./QuestionsPage.js";
 
 export default function App() {
@@ -8,7 +8,7 @@ export default function App() {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/categories/:title" element={<QuestionPage />} />
+        <Route path="/categories/:title" element={<SinglePageQuestion />} />
       </Routes>
     </>
   );
