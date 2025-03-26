@@ -1,9 +1,13 @@
-import { questionQuiz } from "./data";
 import { useState } from "react";
 import React from "react";
-import { resultInitialEstate } from "./constants";
 import { useParams } from "react-router-dom";
 import { getQuestionByCategory } from "./data";
+
+const resultInitialEstate = {
+  score: 0,
+  correctAnswers: 0,
+  wrongAnswers: 0,
+};
 
 export function SinglePageQuestion() {
   const [currentQuestion, setCurrentQuestion] = useState(0);

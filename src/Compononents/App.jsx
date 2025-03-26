@@ -1,7 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { Home } from "../Pages/home.jsx";
-import { SinglePageQuestion } from "./Question.jsx";
-import { QuestionPage } from "./QuestionsPage.js";
+import { SinglePageQuestion } from "./question.jsx";
 
 export default function App() {
   return (
