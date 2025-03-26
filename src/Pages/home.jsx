@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Navbar } from "../Compononents/navbar";
+import { Navbar } from "../components/navbar";
 
 export function Home() {
   return (
