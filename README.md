@@ -11,12 +11,12 @@ Project purpose:
 A quiz application built with a focus on logic and functionality, featuring dynamic question handling, answer validation, scoring, and progress tracking.
 
 Core Technologies & Features:
-React – Developed with functional components for building reusable and efficient UI elements.
-React Router – Handles smooth navigation between quiz pages, results, and home screens.
-CSS Styling – Ensures a clean, modular structure with scoped styles unique to each component.
-Responsive Design – Optimized for mobile and desktop using Flexbox and Grid.
-Vercel Deployment – Hosted on Vercel with automatic redeployment on each code update.
-React Developer Tools (Chrome) – Assisted in debugging and optimizing component state, props, and hierarchy during development.
+- React – Developed with functional components for building reusable and efficient UI elements.
+- React Router – Handles smooth navigation between quiz pages, results, and home screens.
+- CSS Styling – Ensures a clean, modular structure with scoped styles unique to each component.
+- Responsive Design – Optimized for mobile and desktop using Flexbox and Grid.
+- Vercel Deployment – Hosted on Vercel with automatic redeployment on each code update.
+- React Developer Tools (Chrome) – Assisted in debugging and optimizing component state, props, and hierarchy during development.
   
 ## Getting Started
 
