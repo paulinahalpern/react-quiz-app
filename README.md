@@ -31,7 +31,7 @@ Core Technologies & Features:
             `git clone (https://github.com/paulinahalpern/react-quiz-app.git)`
     
 2.  Navigate to the project directory:
-            `cd real-estate-estatery`
+            `cd react-quiz-app`
     
 4.  Install dependencies:
             `npm install`
