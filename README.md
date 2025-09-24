@@ -4,7 +4,7 @@
 
 Live Site: https://create-react-app-bqzo.vercel.app/
 
-Design Source: https://www.frontendmentor.io/challenges
+Design Source: https://www.frontendmentor.io/challenges/frontend-quiz-app-BE7xkzXQnU
 
 
 Project purpose:
