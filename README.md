@@ -2,25 +2,21 @@
 |-------|-------|
 | ![Screenshot 1](https://github.com/user-attachments/assets/aa4c3b00-2100-406b-bf73-e57cdbdce98f) | ![Screenshot 2](https://github.com/user-attachments/assets/a1b91c95-0c11-4fac-9f43-37e1541083cb) |
 
-Live Site: https://estatery-real-estate.vercel.app/
+Live Site: https://create-react-app-bqzo.vercel.app/
 
-Design Source: https://www.figma.com/community/file/1159150161670385658/free-estatery-real-estate-saas-web-and-mobile-ui-kit
+Design Source: https://www.frontendmentor.io/challenges
 
 
 Project purpose:
-This project focuses on UI/UX design, created using Figma to develop a clean and user-centered real estate landing page.
+A quiz application built with a focus on logic and functionality, featuring dynamic question handling, answer validation, scoring, and progress tracking.
 
 Core Technologies & Features:
-- React – Built with functional components.
-- React Router - Enables navigation.
-- CSS Modules – Provides scoped styling and promotes better structure and organization by keeping styles unique and local to each component.
-- CSS Variables - Used for consistency across the app, and for more readable and maintainable styles.
-- Responsive Design – Mobile-friendly layout using Flexbox/Grid.
-- Vercel Deployment - Deployed with automatic updates on code push.
-- TypeScript – Adds static typing for more reliable and maintainable code.
-  Used extends to define reusable prop types via base interfaces.
-- React Developer Tools (Chrome) – Used to inspect component hierarchies, props, and state during development for easier debugging and optimization.
-- Figma – UI/UX design reference for layout and styling consistency.
+React – Developed with functional components for building reusable and efficient UI elements.
+React Router – Handles smooth navigation between quiz pages, results, and home screens.
+CSS Styling – Ensures a clean, modular structure with scoped styles unique to each component.
+Responsive Design – Optimized for mobile and desktop using Flexbox and Grid.
+Vercel Deployment – Hosted on Vercel with automatic redeployment on each code update.
+React Developer Tools (Chrome) – Assisted in debugging and optimizing component state, props, and hierarchy during development.
   
 ## Getting Started
 
@@ -32,7 +28,7 @@ Core Technologies & Features:
 ### Installation
 
 1.  Clone the repository:
-            `git clone (https://github.com/paulinahalpern/estatery-real-estate.git)`
+            `git clone (https://github.com/paulinahalpern/react-quiz-app.git)`
     
 2.  Navigate to the project directory:
             `cd real-estate-estatery`
